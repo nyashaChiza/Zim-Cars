@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{url_for('static',filename = 'img/favicon.png')}}">
+
+    <title>ZimCars</title>
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS --><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet" href =" {{url_for('static', filename = 'css/bootstrap.css')}}"> 
+  <link rel = "stylesheet" href =" {{url_for('static', filename = 'css/style.css')}}"> 
+  <link rel = "stylesheet" href =" {{url_for('static', filename = 'css/montserrat-font.css')}}"> 
+  <link rel = "stylesheet" href =" {{url_for('static', filename = 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css')}}"> 
+  
+  
+</head>
+  <body class = "bg-dark" >
+    <div class = "form-v10-light mx-auto ">
+    {% include 'includes/_navbar.html' %}
+    <div class = "form-v10-light mx-auto ">
+    {% block body %}{% endblock %}
+   
+</divter style="height:40px;" class="footer  col-md-12 navbar navbar-default  bg-light">
+      <div class="container">
+  
+        <span class="text-muted">Powered By NChiza.<br /></span>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename ='vendor/jquery-slim.min.js')}}"  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{{url_for("static",filename ="vendor/jquery-slim.min.js")}}"><\/script>')</script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="{{url_for('static',filename ='js/bootstrap.js')}}" ></script>
+
+  </body>
+
+ 
+  </html>

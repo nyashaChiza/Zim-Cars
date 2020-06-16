@@ -1,0 +1,110 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+<p class = "text-center text-secondary h1 ">Search Results</p>
+<div class= "bg-light">
+    <br />
+    {%  for car in sv1 %} 
+    <div class="card mb-3 mx-auto" style="max-width: 680px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+          
+            <img class="card-img-top" height = 200 width = 8px src = "{{car.Image1}}" alt="Card image cap">
+          
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+              <p class="card-text">
+              <h4><span class="badge badge-primary">Name </span> &nbsp &nbsp {{ car.Name}}</h4>
+              <h4><span class="badge badge-primary">Model</span> &nbsp &nbsp {{car.Model}}</h4>
+              <h4><span class="badge badge-primary">Price &nbsp</span> &nbsp &nbsp ${{car.Price}} USD </h4>
+              <h4><span class="badge badge-primary">Year &nbsp </span>  &nbsp &nbsp &nbsp {{car.Year}}</h4>
+      
+              </p>
+             <hr />
+              <p class="card-text text-center"><a href = "More_Details/{{ car.id }}"><button type="button" class="btn btn-outline-primary btn-sm">More Details</button></a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /> 
+{% endfor %}
+{%  for car in sv2 %}  <div class="card mb-3 mx-auto" style="max-width: 680px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+      
+        <img class="card-img-top" height = 200 width = 8px src = "{{car.Image1}}" alt="Card image cap">
+      
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          
+          <p class="card-text">
+          <h4><span class="badge badge-primary">Name </span> &nbsp &nbsp {{ car.Name}}</h4>
+          <h4><span class="badge badge-primary">Model</span> &nbsp &nbsp {{car.Model}}</h4>
+          <h4><span class="badge badge-primary">Price &nbsp</span> &nbsp &nbsp ${{car.Price}} USD </h4>
+          <h4><span class="badge badge-primary">Year &nbsp </span>  &nbsp &nbsp &nbsp {{car.Year}}</h4>
+  
+          </p>
+         <hr />
+          <p class="card-text text-center"><a href = "More_Details/{{ car.id }}"><button type="button" class="btn btn-outline-primary btn-sm">More Details</button></a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /> 
+{% endfor %}
+{%  for car in sv3 %} 
+<div class="card mb-3 mx-auto" style="max-width: 680px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+      
+        <img class="card-img-top" height = 200 width = 8px src = "{{car.Image1}}" alt="Card image cap">
+      
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          
+          <p class="card-text">
+          <h4><span class="badge badge-primary">Name </span> &nbsp &nbsp {{ car.Name}}</h4>
+          <h4><span class="badge badge-primary">Model</span> &nbsp &nbsp {{car.Model}}</h4>
+          <h4><span class="badge badge-primary">Price &nbsp</span> &nbsp &nbsp ${{car.Price}} USD </h4>
+          <h4><span class="badge badge-primary">Year &nbsp </span>  &nbsp &nbsp &nbsp {{car.Year}}</h4>
+  
+          </p>
+         <hr />
+          <p class="card-text text-center"><a href = "More_Details/{{ car.id }}"><button type="button" class="btn btn-outline-primary btn-sm">More Details</button></a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /> {% endfor %}
+{%  for car in sv4 %} 
+<div class="card mb-3 mx-auto" style="max-width: 680px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+      
+        <img class="card-img-top" height = 200 width = 8px src = "{{car.Image1}}" alt="Card image cap">
+      
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          
+          <p class="card-text">
+          <h4><span class="badge badge-primary">Name </span> &nbsp &nbsp {{ car.Name}}</h4>
+          <h4><span class="badge badge-primary">Model</span> &nbsp &nbsp {{car.Model}}</h4>
+          <h4><span class="badge badge-primary">Price &nbsp</span> &nbsp &nbsp ${{car.Price}} USD </h4>
+          <h4><span class="badge badge-primary">Year &nbsp </span>  &nbsp &nbsp &nbsp {{car.Year}}</h4>
+  
+          </p>
+         <hr />
+          <p class="card-text text-center"><a href = "More_Details/{{ car.id }}"><button type="button" class="btn btn-outline-primary btn-sm">More Details</button></a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /> {% endfor %}
+</div>
+
+{% endblock %}

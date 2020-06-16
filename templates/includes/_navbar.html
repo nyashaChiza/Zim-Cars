@@ -1,0 +1,36 @@
+  <nav class="navbar   mx-auto">
+    <header class = "header  col-md-12 ">
+
+  <ul class="nav justify-content-center  nav-pills text-dark">
+    <li class="nav-item display-4">
+      <a class="nav-link text-bold lead text-secondary" href="{{url_for('buy')}}">Buy</a>
+    </li>
+    <li class="nav-item display-4">
+      <a class="nav-link lead text-bold text-secondary"  href="{{url_for('index')}}">Home</a>
+    </li>
+    <li class="nav-item display-4">
+      <a class="nav-link lead text-bold text-secondary" href="{{url_for('sell')}}">Sell</a>
+    </li>
+   
+  </ul>
+
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <form class="form-detail"  method = "post" action  = "{{url_for('search')}}" id="myform">
+   <button class="btn btn-outline-primary" type="submit" id="button-addon1">Search</button> 
+    </div>
+    <input type="text" class="form-control col-md-2" name = "search" required placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"> &nbsp &nbsp
+  </form>
+  </div>
+  <hr class = "dark col-md-10" >
+ 
+  <div class = "head lead col-md-8 mx-auto">
+    <p class = "text-center">Buy and Sell vehicles in and around Zimbabwe. We offer popular brands of cars for sale in Zimbabwe. 
+        Get your next car at the best available price with zimCars</p>
+</div>
+  </header>
+</div>
+       
+         
+        </nav>
